@@ -42,7 +42,7 @@ body{font-family:'Montserrat','Noto Sans KR','sans-serif';}
     position:relative;
     background-image:linear-gradient(to right, #fff 0%,#fff 55%, #7d5794 55%, #7d5794 100%)
 }
-}
+
 #main .mid .top .inner{/* position:relative; */}
 #main .mid .top .inner .box1{
     float:left; width:60%; text-align:left; 
