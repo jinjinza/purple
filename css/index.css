@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+KR&display=swap');
+
+.inner{ max-width:1500px; margin:0 auto;}
+body{font-family:'Montserrat','Noto Sans KR','sans-serif';}
+
+#header{position:fixed; width:100%; top:0; left:0; height:74px; z-index: 999; padding:0 50px; border-bottom: 1px solid rgba(255,255,255,0.3);}
+#header h1{
+    width:36px; float:left; padding-top:15px;
+}
+#header #nav{position: absolute; top:50%; left:50%; transform: translate(-50%,-50%); }
+
+#header #nav .depth1 > li{
+    float:left; padding:0px 20px; line-height:70px;
+    font-size:16px; color:#fff; font-family:'montserrat','snas-serif';
+    position:relative;
+}
+#header .member{float:right;}
+#header .member > li{
+    float:left; color:#fff; padding-top:25px;
+}
+#header .member > li:last-child{padding-left: 20px;}
+
+
+
+#main .slideouter{overflow:hidden; text-align:center; height:100vh;}
+
+#main .slideouter .slide{
+    position:relative; background:#252525;
+}
+#main .slideouter .slide img{width:100%;}
+#main .slideouter .slide::after{background: #252525;}
+#main .slideouter .slide .text{
+    position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+    font-size:100px; color:#fff; font-weight:300;
+    font-family: 'Montserrat', sans-serif; line-height:1.2;
+} 
+#main .slideouter .slide .text span{
+    /* display:block; */ font-weight:100;
+}
+#main .mid .top{
+    position:relative; background-image:url(../images/topbg.jpg); 
+    background-repeat:repeat;
+    background-position:50% 0;
+}
+#main .mid .top .inner{/* position:relative; */}
+#main .mid .top .inner .box1{
+    float:left; width:60%; text-align:left; 
+    padding:300px 100px;
+}
+#main .mid .top .inner .box1 h2{
+    font-size:48px; font-weight:700; letter-spacing:-0.7px; color:#111; margin:0 0 20px;
+}
+#main .mid .top .inner .box1 p{
+    font-weight: 300; font-size: 18px; color:#777; margin-bottom:100px;
+}
+#main .mid .top .inner .box1 a{
+    border:1px solid#111; padding: 15px 45px; margin:48px 0px 0px; color:#111;
+    font-size: 16px; font: weight 400px;
+}
+#main .mid .top .inner .box2{
+    float: right; background:#7d5794; color:#fff; font-family:'Noto Sans KR','sans-serif'; width: 40%;
+    padding:150px 100px 200px 80px; /* position:absolute; right:0; */
+}
+#main .mid .top .inner .box2 > div{
+    overflow:hidden; font-size:23px; padding:40px 0; border-bottom:1px solid#fff; 
+}
+#main .mid .top .inner .box2 h2{
+    float:left; font-size:44px; padding-right:50px;
+    
+}
+
+#main .mid .bot{position:relative;}
+#main .mid .bot .inner .box3{
+    float:left; width:60%; position:relative;
+}
+#main .mid .bot .inner .box4{
+    float:right; width:40%; background:#111;
+}
+#main .mid .bot .inner .box4 > div{
+    float:left; 
+}
+#main .mid .bot .inner .box4 > div:nth-child(2n+1){clear:both;}
+#main .mid .bot .inner .box4 > div >i{color:#f8f9fa;}
+/* #main .mid .bot .news{width:50%}
+#main .mid .bot .gall{width:50%}
+#main .mid .bot .down{width:50%}
+#main .mid .bot .video{width:50%} */
+
+#main .container{position: relative;}
+#main .container .inner div{float:left; width:20%}
+#main .container > div > i{
+    width:140px; height:140px; color:#7d5794;
+    border:1px solid #ccc ;
+}
+#main .container div h2{
+    font-size:23px; font-weight:600; color:#111;
+}
+#main .container div p{
+    font-weight: 300; font-size: 18px; color:#777;
+    padding:0 10px;
+}
+
+
+
+
+
+#main .product{
+    background-color:#edeae2;
+    padding:150px 0 300px;
+}
+#main .product .inner ul li{
+    float:left; width:25%;
+}
+#main .product .inner div h2{
+    font-size:56px; font-family:'Montserrat', sans-serif; font-weight:600;
+    color:#111; margin-bottom:48px;
+}
