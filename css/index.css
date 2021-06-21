@@ -39,9 +39,9 @@ body{font-family:'Montserrat','Noto Sans KR','sans-serif';}
     /* display:block; */ font-weight:100;
 }
 #main .mid .top{
-    position:relative; background-image:url(../images/topbg.jpg); 
-    background-repeat:repeat;
-    background-position:50% 0;
+    position:relative;
+    background-image:linear-gradient(to right, #fff 0%,#fff 55%, #7d5794 55%, #7d5794 100%)
+}
 }
 #main .mid .top .inner{/* position:relative; */}
 #main .mid .top .inner .box1{
