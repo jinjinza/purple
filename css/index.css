@@ -25,7 +25,7 @@
 #main .mid{
     position:relative;
     background-image:linear-gradient(to right, #fff 0%,#fff 60%, #7d5794 60%, #7d5794 100%)
-}감사
+}
 
 /* #main .mid .pupinner > div{padding-bottom:200px;} */
 #main .mid .pupinner .box1{
@@ -44,6 +44,7 @@
 }
 #main .mid .pupinner .box1 a span{
     position:absolute; top:15px; right:3px; transition:all 0.2s; opacity:0;
+    
 }
 #main .mid .pupinner .box1 a:hover{
     background-color:#111; color:#fff; padding:15px 55px 15px 35px;
