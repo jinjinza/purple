@@ -1,0 +1,63 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+KR&display=swap');
+
+.inner{ max-width:1500px; margin:0 auto;}
+body{font-family:'Montserrat','Noto Sans KR','sans-serif';}
+
+#header{position:fixed; width:100%; top:0; left:0; height:74px; z-index: 999; padding:0 50px; border-bottom: 1px solid rgba(255,255,255,0.3);}
+#header h1{
+    width:36px; float:left; padding-top:15px;
+}
+#header #nav{position: absolute; top:50%; left:50%; transform: translate(-50%,-50%); }
+
+#header #nav .depth1 > li{
+    float:left; padding:0px 20px; line-height:70px;
+    font-size:16px; color:#fff; font-family:'montserrat','snas-serif';
+    position:relative; transition:all 0.3s;
+}
+#header #nav .depth1 > li:hover{color:#7d5794;}
+#header .member{float:right;}
+#header .member > li{
+    float:left; color:#fff; padding-top:25px; transition:all 0.3s;
+}
+#header .member > li:hover{color: #7d5794;}
+#header .member > li:last-child{padding-left: 20px;}
+
+/*  */
+#footer{background-color:#8f6fa3;}
+
+#footer .inner .info{
+    color:#fff; text-align:center; font-weight:200;
+    /* padding:50px 0 50px; */
+}
+#footer .inner .info1{
+    float:left; width:500px;
+}
+#footer .inner .info1 .font1{float:left; width:10%;}
+#footer .inner .info1 .t1{
+    float:left; width:90%; text-align:left;
+}
+#footer .inner .info2{
+    float:left; width:500px;
+}
+#footer .inner .info2 .font2{float:left; width:10%}
+#footer .inner .info2 .t2{
+    float:left; width:90%; text-align:left;
+}
+#footer .inner .info3{
+    float:left; width:500px;
+}
+#footer .inner .info3 .font3{float:left; width:10%}
+#footer .inner .info3 .t3{
+    float:left; width:90%; text-align:left;
+}
+
+
+
+
+
+#footer .last{
+    background-color:#eeee; padding:40px 0;
+    font-size:14px; color:#777; font-weight:300;
+    text-align:center;
+}

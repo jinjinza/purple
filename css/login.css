@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+#loginpage .logintop{
+    background:url(../images/mypage.png)no-repeat;
+    padding:80px 15px; /* margin:0 auto; */
+    width:100%; text-align:center;
+}
+#loginpage .logintop::after{background: #111;
+    opacity: 0.7;}
+#loginpage .logintop h2{
+    color:#edeae2; font-weight:600;
+    font-size:48px; font-family:'Montserrat', sans-serif;
+}
+
+#loginpage .inner .loginbox{
+    border-radius: 1px solid #eee;
+    float: left; width:50%; padding:80px;
+    
+}
+#loginpage .inner .loginbox .loginwrap{
+    text-align:center;
+}
+#loginpage .inner .loginbox .loginwrap .loginform p{
+    color: #222;
+    background-color: #f6f6f6;
+    padding:8px 12px 8px 60px;
+}
+#loginbox ::placeholder{color:}

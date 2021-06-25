@@ -1,106 +1,101 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+KR&display=swap');
-
-.inner{ max-width:1500px; margin:0 auto;}
-body{font-family:'Montserrat','Noto Sans KR','sans-serif';}
-
-#header{position:fixed; width:100%; top:0; left:0; height:74px; z-index: 999; padding:0 50px; border-bottom: 1px solid rgba(255,255,255,0.3);}
-#header h1{
-    width:36px; float:left; padding-top:15px;
-}
-#header #nav{position: absolute; top:50%; left:50%; transform: translate(-50%,-50%); }
-
-#header #nav .depth1 > li{
-    float:left; padding:0px 20px; line-height:70px;
-    font-size:16px; color:#fff; font-family:'montserrat','snas-serif';
-    position:relative;
-}
-#header .member{float:right;}
-#header .member > li{
-    float:left; color:#fff; padding-top:25px;
-}
-#header .member > li:last-child{padding-left: 20px;}
-
-
-
 #main .slideouter{overflow:hidden; text-align:center; height:100vh;}
 
 #main .slideouter .slide{
-    position:relative; background:#252525;
+    position:relative; overflow:hidden;
+    height:100vh; width:100%; background-size:cover; background-repeat:no-repeat;
 }
-#main .slideouter .slide img{width:100%;}
-#main .slideouter .slide::after{background: #252525;}
-#main .slideouter .slide .text{
+#main .slideouter .slide1 {height:100vh; background-image:url(../images/hero01.png) ;}
+#main .slideouter .slide2 {height:100vh; background-image:url(../images/hero02.png) ;}
+/* #main .slideouter .slide img{width:100%;} */
+#main .slideouter .slide::after{
+    background: rgba(0,0,0,0.5); content:''; 
+    position:absolute; top:0; left:0; bottom:0; right:0;
+}
+#main .slideouter .slide .text h2{
     position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
-    font-size:100px; color:#fff; font-weight:300;
+    font-size:100px; color:#fff; font-weight:700 !important;
     font-family: 'Montserrat', sans-serif; line-height:1.2;
+    z-index: 99;
 } 
-#main .slideouter .slide .text span{
-    /* display:block; */ font-weight:100;
+#main .slideouter .slide .text h2 span{
+    /* display:block; */ font-weight:100 !important;
+    color:rgb(255, 7, 7) ; font-family: 'Montserrat', sans-serif;
 }
-#main .mid .top{
+#main .mid{
     position:relative;
-    background-image:linear-gradient(to right, #fff 0%,#fff 58%, #7d5794 58%, #7d5794 100%)
-}
+    background-image:linear-gradient(to right, #fff 0%,#fff 60%, #7d5794 60%, #7d5794 100%)
+}감사
 
-
-#main .mid .top .inner .box1{
+/* #main .mid .pupinner > div{padding-bottom:200px;} */
+#main .mid .pupinner .box1{
     float:left; width:60%; text-align:left; 
-    padding:300px 100px;
+    padding:200px 100px 400px 150px; 
 }
-#main .mid .top .inner .box1 h2{
+#main .mid .pupinner .box1 h2{
     font-size:48px; font-weight:700; letter-spacing:-0.7px; color:#111; margin:0 0 20px;
 }
-#main .mid .top .inner .box1 p{
+#main .mid .pupinner .box1 p{
     font-weight: 300; font-size: 18px; color:#777; margin-bottom:100px;
 }
-#main .mid .top .inner .box1 a{
+#main .mid .pupinner .box1 a{
     border:1px solid#111; padding: 15px 45px; margin:48px 0px 0px; color:#111;
-    font-size: 16px; font: weight 400px;
+    font-size: 16px; font: weight 400px; transition:all 0.3s; position: relative;
 }
-#main .mid .top .inner .box2{
+#main .mid .pupinner .box1 a span{
+    position:absolute; top:15px; right:3px; transition:all 0.2s; opacity:0;
+}
+#main .mid .pupinner .box1 a:hover{
+    background-color:#111; color:#fff; padding:15px 55px 15px 35px;
+}
+#main .mid .pupinner .box1 a:hover span{
+    display:inline-block; position:absolute; top:15px; right:25px; opacity:1;
+}
+#main .mid .pupinner .box2{
     float: right; color:#fff; font-family:'Noto Sans KR','sans-serif'; width: 40%;
-    padding:150px 100px 200px 80px; /* position:absolute; right:0; */
+    padding:125px 150px 300px 80px; /* position:absolute; right:0; */
 }
-#main .mid .top .inner .box2 > div{
+#main .mid .pupinner .box2 > div{
     overflow:hidden; font-size:23px; padding:40px 0; border-bottom:1px solid#fff; 
 }
-#main .mid .top .inner .box2 h2{
+#main .mid .pupinner .box2 h2{
     float:left; font-size:44px; padding-right:50px;
     
 }
 
 #main .bot{
-    position:relative; /* top:-200px; */
-    background-image:linear-gradient(to right, #7d5794 0%,#7d5794 58%, #fff 58%, #fff 100%); padding-bottom:100px;
+    position:relative; top:-200px;
+    background-image:linear-gradient(to right, #7d5794 0%,#7d5794 60%, transparent 60%, transparent 100%); padding-bottom:100px;
     /* z-index:-99px; */
 }
-#main .bot .inner .box3{
-    float:left; width:60.8%; position:relative;
+#main .bot .pupinner .box3{
+    float:left; width:60%; position:relative; padding-left:150px;
 }
-#main .bot .inner .box3 .pic{
+#main .bot .pupinner .box3 .pic{
     height:600px; overflow:hidden;
 }
-#main .bot .inner .box3 .pic .pic1{height:600px; background:url(../images/03\ \(1\).png) no-repeat;}
-#main .bot .inner .box3 .pic .pic2{height:600px; background:url(../images/02\ \(1\).png) no-repeat;}
-#main .bot .inner .box3 .pic .pic3{height:600px; background:url(../images/01\ \(1\).png) no-repeat;}
-#main .bot .inner .box4{
-    float:right; width:39.2%;  
+#main .bot .pupinner .box3 .pic .pic1{height:600px; background:url(../images/13.png) no-repeat;}
+#main .bot .pupinner .box3 .pic .pic2{height:600px; background:url(../images/12.png) no-repeat;}
+#main .bot .pupinner .box3 .pic .pic3{height:600px; background:url(../images/11.png) no-repeat;}
+#main .bot .pupinner .box4{
+    float:right; width:40%; padding-right:150px; 
 }
-#main .bot .inner .box4 > div{
+#main .bot .pupinner .box4 > div{
     float:left; background:#111; padding:104px 100px ;
-    line-height: 1.682; color:#edeae2; border:1px solid red;
-    font-size: 18px; font-weight:normal; width:50%
+    line-height: 1.682; color:#edeae2;
+    font-size: 18px; font-weight:normal; width:50%; text-align:center;
+    transition:all 0.4s; cursor: pointer;
 }
-#main .bot .inner .box4 > div:nth-child(2n+1){clear:both;}
-#main .bot .inner .box4 > div i{font-size:40px; margin-bottom:20px;}
-#main .bot .inner .box4 > div > a{text-align:center;}
-/* #main .mid .bot .news{width:50%}
-#main .mid .bot .gall{width:50%}
-#main .mid .bot .down{width:50%}
-#main .mid .bot .video{width:50%} */
+#main .bot .pupinner .box4 > div:hover{
+    background-color:#1d1d1d;
+}
+#main .bot .pupinner .box4 > div:nth-child(2n+1){clear:both;}
+#main .bot .pupinner .box4 > div i{font-size:40px; margin-bottom:20px;}
+#main .bot .pupinner .box4 > div:nth-child(2n){border-left:0.5px solid#333;}
+#main .bot .pupinner .box4 > div.news{border-bottom:0.5px solid#333;}
+#main .bot .pupinner .box4 > div.gall{border-bottom:0.5px solid#333;}
 
-#main .container{position: relative;}
+#main .container{position: relative; margin-top:-200px;}
 #main .container .inner{padding:120px 0;}
 #main .container .inner > div{
     float:left; width:25%; text-align:center;
@@ -125,10 +120,6 @@ body{font-family:'Montserrat','Noto Sans KR','sans-serif';}
     margin:0 30px;
 }
 
-
-
-
-
 #main .product{
     background-color:#edeae2;
     padding:150px 0 300px;
@@ -136,10 +127,38 @@ body{font-family:'Montserrat','Noto Sans KR','sans-serif';}
 #main .product .inner ul li{
     float:left; width:25%;
 }
-#main .product .inner div h2{
-    font-size:56px; font-family:'Montserrat', sans-serif; font-weight:600;
+#main .product .inner > div{position:relative}
+#main .product .inner > div h2{
+    font-size:56px; font-family:'Montserrat', sans-serif; font-weight:600; padding:0 15px;
     color:#111; margin-bottom:48px;
 }
-#main .product .inner > ul li p{
-    display:none;
+#main .product .inner > div a.more{
+    position:absolute; top:0; right:0;
+    border:1px solid#111; padding:15px 45px;
+    font-size: 16px; font-weight:400; 
+    margin:0 15px 0 48px; transition: all 0.3s;
+}
+#main .product .inner > div a.more span{
+    position:absolute; top: 15px; right:3px; transition:all 0.2s; opacity:0;
+}
+#main .product .inner > div a.more:hover{
+    padding:15px 55px 15px 35px; background-color:#111; color:#fff;
+}
+#main .product .inner > div a.more:hover span{
+    display:inline-block; position:absolute; top:15px; right:25px; opacity:1;
+}
+#main .product .inner ul li p{
+    background-color:#fff; color:#111;
+    padding:30px 0 50px; text-align:center;
+    font-size:23px; font-weight:400;
+}
+#main .product .inner ul li img{
+    transition: all 0.4s; /* position:relative; */
+}
+#main .product .inner ul li:hover img{
+    margin-top:-100px; opacity: 0.6;
+}
+
+#main .product .inner ul li > a{
+    display:block; overflow:hidden; height:370px;
 }
