@@ -20,7 +20,7 @@
 } 
 #main .slideouter .slide .text h2 span{
     /* display:block; */ font-weight:100 !important;
-    color:rgb(255, 7, 7) ; font-family: 'Montserrat', sans-serif;
+     font-family: 'Montserrat', sans-serif;
 }
 #main .mid{
     position:relative;
